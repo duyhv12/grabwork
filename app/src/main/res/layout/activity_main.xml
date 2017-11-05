@@ -6,51 +6,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     android:orientation="vertical"
-    tools:context="duydev.com.grabwork.MainActivity">
+    android:id="@+id/fragmentContentLogin"
+    tools:context="duydev.com.grabwork.activity.MainActivity">
 
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/layout_header_appbar"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="18dp"
-        android:paddingRight="18dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1.1"
-            android:layout_gravity="center"
-            android:layout_marginTop="18dp">
-
-            <ImageView
-                android:id="@+id/imLogin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/login"/>
-            <ImageView
-                android:id="@+id/imRegister"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/signup"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1">
-
-            <FrameLayout
-                android:id="@+id/fragmentContentLogin"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </FrameLayout>
-        </LinearLayout>
-
-    </LinearLayout>
 </LinearLayout>

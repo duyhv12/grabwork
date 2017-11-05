@@ -1,7 +1,9 @@
-package duydev.com.grabwork;
+package duydev.com.grabwork.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import duydev.com.grabwork.R;
 
 public class MapActivity extends AppCompatActivity {
 

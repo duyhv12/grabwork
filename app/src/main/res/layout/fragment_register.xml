@@ -3,42 +3,130 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-        android:orientation="vertical"
-    tools:context="duydev.com.grabwork.LoginFragment">
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="duydev.com.grabwork.activity.LoginFragment">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:drawableRight="@drawable/ic_email"
-        android:background="@drawable/drawable"
-        android:hint="Email"
-        android:paddingRight="10dp"
-        android:paddingLeft="8dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:drawableRight="@drawable/ic_pass"
-        android:background="@drawable/drawable"
-        android:paddingRight="10dp"
-        android:hint="Mật khẩu"
-        android:paddingLeft="8dp"
-        android:layout_marginTop="4dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:drawableRight="@drawable/ic_pass"
-        android:background="@drawable/drawable"
-        android:paddingRight="10dp"
-        android:hint="Nhập lại mật khẩu"
-        android:paddingLeft="8dp"
-        android:layout_marginTop="4dp"/>
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ĐĂNG NHẬP"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:background="@drawable/drawable_custom_button"
-        android:layout_marginTop="19dp"/>
+        android:padding="4dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imIcon"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_female"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#34bdaa"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:background="@drawable/drawable_bg_edittext"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/ic_user"
+            android:hint="Tên đăng nhập"
+            android:layout_marginBottom="6dp"
+            android:textColor="#000"/>
+        <EditText
+            android:id="@+id/edtPassRe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:background="@drawable/drawable_bg_edittext"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/ic_lock"
+            android:hint="Mật khẩu"
+            android:layout_marginBottom="6dp"
+            android:textColor="#000"/>
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:background="@drawable/drawable_bg_edittext"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/ic_place"
+            android:hint="Địa chỉ"
+            android:layout_marginBottom="6dp"
+            android:textColor="#000"/>
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:inputType="number"
+            android:paddingBottom="7dp"
+            android:background="@drawable/drawable_bg_edittext"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/ic_phone"
+            android:hint="Sđt"
+            android:layout_marginBottom="6dp"
+            android:textColor="#000"/>
+        <EditText
+            android:id="@+id/edtCardId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:background="@drawable/drawable_bg_edittext"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/ic_card"
+            android:hint="CMT"
+            android:layout_marginBottom="6dp"
+            android:textColor="#000"/>
+        <Spinner
+            android:id="@+id/spnRole"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/drawable_custom_spinner"
+            android:entries="@array/role_array"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/drawable_custom_button_post"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="ĐĂNG KÝ"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>
